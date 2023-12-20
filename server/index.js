@@ -14,7 +14,7 @@ app.use(express.urlencoded({limit : "30mb", extended: true}))
 app.use(cors());
 
 app.get('/',(req, res)=>{
-    res.json("This is a stack overflow clone API")
+    res.send("This is a stack overflow clone API")
 })
 
 app.use('/user', userRoutes)
